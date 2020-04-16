@@ -43,14 +43,16 @@ call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 
 " Plugins
-Plugin 'Valloric/YouCompleteMe'
+Plugin 'ycm-core/YouCompleteMe'
 Plugin 'itchyny/lightline.vim'
 Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'tpope/vim-surround'
 Plugin 'xuhdev/vim-latex-live-preview'
-
-Bundle 'mateusbraga/vim-spell-pt-br'
+Plugin 'vim-airline/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
+"
+" Bundle 'mateusbraga/vim-spell-pt-br'
 
 " Track the engine. UtilSnippets
 Plugin 'SirVer/ultisnips'
@@ -61,12 +63,12 @@ Plugin 'honza/vim-snippets'
 let g:UltiSnipsExpandTrigger="<c-Space>"
 let g:UltiSnipsJumpForwardTrigger="<c-b>"
 let g:UltiSnipsJumpBackwardTrigger="<c-z>"
-" let g:UltiSnipsUsePythonVersion = 2
+let g:UltiSnipsUsePythonVersion = 2
 
 " The following are examples of different formats supported.
 " Keep Plugin commands between vundle#begin/end.
 " plugin on GitHub repo
-"Plugin 'tpope/vim-fugitive'
+Plugin 'tpope/vim-fugitive'
 " plugin from http://vim-scripts.org/vim/scripts.html
 " Plugin 'L9'
 " Git plugin not hosted on GitHub
@@ -79,12 +81,12 @@ let g:UltiSnipsJumpBackwardTrigger="<c-z>"
 " Install L9 and avoid a Naming conflict if you've already installed a
 " different version somewhere else.
 " Plugin 'ascenator/L9', {'name': 'newL9'}
-
+"
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
 " To ignore plugin indent changes, instead use:
-"filetype plugin on
+filetype plugin on
 "
 " Brief help
 " :PluginList       - lists configured plugins
@@ -96,3 +98,8 @@ filetype plugin indent on    " required
 " Put your non-Plugin stuff after this line
 
 let g:livepreview_previewer = 'evince'
+
+colorscheme slate
+set cursorline
+highlight CursorLine cterm=NONE ctermbg=8
+
