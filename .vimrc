@@ -1,4 +1,4 @@
-execute pathogen#infect()
+" execute pathogen#infect()
 " Syntax Highlight On
 filetype plugin indent on
 syntax on
@@ -58,7 +58,7 @@ call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 
 " Plugins
-" Plugin 'ycm-core/YouCompleteMe'
+Plugin 'ycm-core/YouCompleteMe'
 Plugin 'itchyny/lightline.vim'
 Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'airblade/vim-gitgutter'
