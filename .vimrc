@@ -107,6 +107,20 @@ filetype plugin indent on    " required
 " see :h vundle for more details or wiki for FAQ
 " Put your non-Plugin stuff after this line
 
+" Mapeamento de teclas para o vimspector
+nnoremap <Leader>dd :call vimspector#Launch()<CR>
+nnoremap <Leader>de :call vimspector#Reset()<CR>
+nnoremap <Leader>dc :call vimspector#Continue()<CR>
+
+nnoremap <Leader>dt :call vimspector#ToggleBreakpoint()<CR>
+nnoremap <Leader>dT :call vimspector#ClearBreakpoints()<CR>
+
+nmap <Leader>dk <Plug>VimspectorRestart
+nmap <Leader>dh <Plug>VimspectorStepOut
+nmap <Leader>dl <Plug>VimspectorStepInto
+nmap <Leader>dj <Plug>VimspectorStepOver
+
+
 let g:livepreview_previewer = 'zathura'
 
 colorscheme slate
